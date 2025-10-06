@@ -3,132 +3,240 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link href="./styles/index.css" rel="stylesheet" />
+
+    <script src="./scripts/main.js" defer nomodule></script>
     <title>Victor Kang'acha Portfolio</title>
-    <script src="main.js" defer nomodule></script>
-    <style src='./styles/styles.css'></style>
-    <style src='./styles/index.css'></style>
   </head>
   <body>
     <header class="main-header">
-      <div class="name-decription">
-        <p class="name">Victor Kang'acha</p>
-        <span>|</span>
-        <p class="description">Portfolio</p>
+      <div class="name-description">
+        <a href="#">Victor Kang'acha<span>|</span>Portfolio</a>
       </div>
-      <nav class="main-nav">
-        <a href="#" class="">Home</a>
-        <span>|</span>
-        <a href="#" class="">About</a>
-        <span>|</span>
-        <a href="#" class="">Projects</a>
-        <span>|</span>
-        <a href="#" class="">Contact</a>
-        <span>|</span>
-        <div class="color-theme"></div>
-      </nav>
+
+      <div class="nav-box">
+        <nav class="main-nav">
+          <a href="#" class="">Home</a>
+          <span>|</span>
+          <a href="#" class="">About</a>
+          <span>|</span>
+          <a href="#" class="">Projects</a>
+          <span>|</span>
+          <a href="#" class="">Contact</a>
+          <span>|</span>
+        </nav>
+        <button class="theme-btn">
+          <img src="" alt="theme switch" />
+        </button>
+      </div>
     </header>
 
-    <main class="home-body">
+    <main>
       <section class="intro-section">
-        <div class="usr-img-box">
-          <img src="" alt="A headshot of Victor Kang'acha" />
+        <img
+          class="usr-img"
+          src="../public/images/headshot.jpg"
+          alt="A headshot of Victor Kang'acha"
+        />
+        <p class="usr-name">Hi, I'm Victor Kang'acha</p>
+        <div class="usr-titles">
+          <p id="">Data Scientist</p>
+          <span>|</span>
+          <p id="">Web Developer</p>
+          <span>|</span>
+          <p id="">IT Support</p>
         </div>
-        <div class="usr-box">
-          <p class="usr-name">Hi, I'm Victor Kang'acha</p>
-          <div class="usr-titles">
-            <p id="">Data Scientist</p>
-            <p id="">Web Developer</p>
-            <p id="">IT Support</p>
-          </div>
-          <div class="cta-section">
-            <button class="contact-btn">Get In Touch</button>
-            <button class="projects-btn">View All Projects</button>
-          </div>
+        <div class="cta-section">
+          <button id="contact-btn">Get In Touch</button>
+          <button id="projects-btn">View Projects</button>
         </div>
       </section>
-      <section class="about-section">
-        <div class="section-label"></div>
-        <h2 class="section-header">Crafting AI/ML Solutions</h2>
-        <p>Data scientist in AI/ML solutions</p>
-        <div class="topics-box">
-          <div class="topic-bg">
-            <img src="" alt="" />
-            <h3 class="topic-header">Background</h3>
-            <p class="">
-              As a data scientist, I specialize in developing applications that
-              utilize cutting edge AI/ML solutions. My expertise span machine
-              learning, and building scalable AI solutions that drive business
-              value.
-            </p>
+      <section class="section-container">
+        <div class="about-section">
+          <p class="about-section-label">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#000000"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z"
+              ></path>
+            </svg>
+            About me
+          </p>
+          <h2 class="section-header">Crafting AI/ML Solutions</h2>
+          <p class="section-description">Data scientist in AI/ML solutions</p>
+          <div class="topics-container">
+            <div class="topic-bg">
+              <img src="" alt="" />
+              <h3 class="topic-header">
+                <svg
+                  class="topic-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"
+                  ></path>
+                </svg>
+                Background
+              </h3>
+              <p class="">
+                As a Data Scientist, I specialize in developing applications
+                that utilize cutting edge AI/ML solutions. My expertise span
+                machine learning, and building scalable AI solutions that drive
+                business value.
+              </p>
+            </div>
+            <div class="topics-box">
+              <div class="topic-aiml">
+                <h3 class="topic-header">
+                  <svg
+                    class="topic-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M248,124a56.11,56.11,0,0,0-32-50.61V72a48,48,0,0,0-88-26.49A48,48,0,0,0,40,72v1.39a56,56,0,0,0,0,101.2V176a48,48,0,0,0,88,26.49A48,48,0,0,0,216,176v-1.41A56.09,56.09,0,0,0,248,124ZM88,208a32,32,0,0,1-31.81-28.56A55.87,55.87,0,0,0,64,180h8a8,8,0,0,0,0-16H64A40,40,0,0,1,50.67,86.27,8,8,0,0,0,56,78.73V72a32,32,0,0,1,64,0v68.26A47.8,47.8,0,0,0,88,128a8,8,0,0,0,0,16,32,32,0,0,1,0,64Zm104-44h-8a8,8,0,0,0,0,16h8a55.87,55.87,0,0,0,7.81-.56A32,32,0,1,1,168,144a8,8,0,0,0,0-16,47.8,47.8,0,0,0-32,12.26V72a32,32,0,0,1,64,0v6.73a8,8,0,0,0,5.33,7.54A40,40,0,0,1,192,164Zm16-52a8,8,0,0,1-8,8h-4a36,36,0,0,1-36-36V80a8,8,0,0,1,16,0v4a20,20,0,0,0,20,20h4A8,8,0,0,1,208,112ZM60,120H56a8,8,0,0,1,0-16h4A20,20,0,0,0,80,84V80a8,8,0,0,1,16,0v4A36,36,0,0,1,60,120Z"
+                    ></path>
+                  </svg>
+                  AI & ML
+                </h3>
+                <ul class="topic-list">
+                  <li>Neural Networks</li>
+                  <li>Reinforcement Learning</li>
+                  <li>Deep Learning</li>
+                </ul>
+              </div>
+              <div class="topic-ds">
+                <h3 class="topic-header">
+                  <svg
+                    class="topic-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M232,208a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V48a8,8,0,0,1,16,0V200H224A8,8,0,0,1,232,208ZM132,160a12,12,0,1,0-12-12A12,12,0,0,0,132,160Zm-24-56A12,12,0,1,0,96,92,12,12,0,0,0,108,104ZM76,176a12,12,0,1,0-12-12A12,12,0,0,0,76,176Zm96-48a12,12,0,1,0-12-12A12,12,0,0,0,172,128Zm24-40a12,12,0,1,0-12-12A12,12,0,0,0,196,88Zm-20,76a12,12,0,1,0,12-12A12,12,0,0,0,176,164Z"
+                    ></path>
+                  </svg>
+                  Data Science
+                </h3>
+                <ul class="topic-list">
+                  <li>Data Cleaning</li>
+                  <li>Data Visualization</li>
+                  <li>Feature Engineering</li>
+                  <li>Statistical Modelling</li>
+                </ul>
+              </div>
+              <div class="topic-prog">
+                <h3 class="topic-header">
+                  <svg
+                    class="topic-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"
+                    ></path>
+                  </svg>
+                  Programming
+                </h3>
+                <ul class="topic-list">
+                  <li>JavaScript</li>
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>Tensorflow</li>
+                  <li>Pandas</li>
+                  <li>Scikit-Learn</li>
+                  <li>Numpy</li>
+                </ul>
+              </div>
+              <div class="topic-ca">
+                <h3 class="topic-header">
+                  <svg
+                    class="topic-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#000000"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M160,40A88.09,88.09,0,0,0,81.29,88.67,64,64,0,1,0,72,216h88a88,88,0,0,0,0-176Zm0,160H72a48,48,0,0,1,0-96c1.1,0,2.2,0,3.29.11A88,88,0,0,0,72,128a8,8,0,0,0,16,0,72,72,0,1,1,72,72Z"
+                    ></path>
+                  </svg>
+                  Cloud Architecture
+                </h3>
+                <ul class="topic-list">
+                  <li>Git</li>
+                  <li>AWS</li>
+                  <li>Docker</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="topic-aiml">
-            <img class="topic-icon" src="" alt="" />
-            <h3 class="topic-header">AI & ML</h3>
-            <ul class="topics-list">
-              <li>Neural Networks</li>
-              <li>Reinforcement Learning</li>
-              <li>Deep Learning</li>
-            </ul>
-          </div>
-          <div class="topic-ds">
-            <img class="topic-icon" src="" alt="" />
-            <h3 class="topic-header">Data Science</h3>
-            <ul class="topics-list">
-              <li>Data Cleaning</li>
-              <li>Data Visualization</li>
-              <li>Feature Engineering</li>
-              <li>Statistical Modelling</li>
-            </ul>
-          </div>
-          <div class="topic-prog">
-            <img class="topic-icon" src="" alt="" />
-            <h3 class="topic-header">Programming</h3>
-            <ul class="topics-list">
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>SQL</li>
-              <li>Tensorflow</li>
-              <li>Pandas</li>
-              <li>Scikit-Learn</li>
-              <li>Numpy</li>
-            </ul>
-          </div>
-          <div class="topic-ca">
-            <img class="topic-icon" src="" alt="" />
-            <h3 class="topic-header">Cloud Architecture</h3>
-            <ul class="topics-list">
-              <li>Git</li>
-              <li>AWS</li>
-              <li>Docker</li>
-            </ul>
-          </div>
+          <button class="about-btn">
+            Learn More About Me
+            <span>&RightArrow;</span>
+          </button>
         </div>
-        <button class="about-btn">
-          Learn More About Me
-          <span>&RightArrow;</span>
-        </button>
       </section>
-      <section class="featured-projects-section">
+
+      <section class="container-feature-projects">
         <h2 class="section-header">Featured Projects</h2>
-        <p>
+        <p class="section-description">
           A section of recent work in web development, data science and cloud
           architecture
         </p>
         <div class="projects-list">
           <figure class="project-card">
-            <img src="" alt="" class="" />
-            <h4 class="project-title"></h4>
-            <p class="project-type">Featured Project</p>
-            <p class="project-description">A modern portfolio website</p>
-            <ul class="project-labels">
-              <li>JavaScript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SQL</li>
-            </ul>
-            <div class="cta-project-section">
-              <button class="live-btn">Live Demo</button>
-              <button class="repo-btn">Github</button>
+            <div class="project-img">
+              <img
+                src="../public/images/nice.jpeg"
+                alt=""
+                class="project-img"
+              />
+            </div>
+            <div>
+              <h4 class="project-title">
+                Portfolio
+                <span class="project-type">Featured Project</span>
+              </h4>
+              <p class="project-description">A modern portfolio website</p>
+              <ul class="project-labels">
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SQL</li>
+              </ul>
+              <div class="cta-project-section">
+                <button class="live-btn">Live Demo</button>
+                <button class="repo-btn">Github</button>
+              </div>
             </div>
           </figure>
         </div>
