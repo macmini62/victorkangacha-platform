@@ -1,0 +1,281 @@
+/* INTRO SECTION */
+
+.about-main {
+  padding: 0 2.4rem;
+  background: linear-gradient(to bottom, #edeff6, #f4f5fa 20% 80%, #edeff6);
+}
+
+.about-intro-section {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+  margin: 9.6rem 0;
+  padding: 0 4.8rem;
+}
+
+.usr-img.img--small {
+  width: 20rem;
+  height: 20rem;
+}
+
+.usr-name.name--small {
+  font-size: 4.8rem;
+  margin: 0;
+}
+
+.usr-titles.titles--small {
+  margin-left: 1.2rem;
+}
+
+.usr-titles.titles--small p,
+.usr-titles.titles--small span {
+  font-size: 1.8rem;
+  letter-spacing: 0.05;
+}
+
+.usr-labels {
+  margin: 2rem 0 0 0.8rem;
+}
+
+.usr-labels li {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.4rem;
+  background-color: #dbdde0;
+  border-radius: 10px;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+}
+
+.usr-labels svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* CV SECTION */
+.cv-section {
+}
+
+.prof-card {
+  width: fit-content;
+  padding: 3.2rem;
+  box-shadow: 0 2.5px 10px 1px rgba(0, 0, 0, 0.079);
+  border-radius: 16px;
+  margin: 0 0 8rem;
+}
+
+.prof-card h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.prof-card p {
+  font-size: 1.8rem;
+  color: #666b78;
+  letter-spacing: 0.04rem;
+  line-height: 1.5;
+}
+
+.prof-card p:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.prof-card p:last-of-type {
+  margin-top: 1rem;
+}
+
+.prof-card,
+.skills-card,
+.work-card,
+.cert-card,
+.edu-card,
+.hobbies-card {
+  margin: 0 0 8rem;
+}
+
+.skills-card h2,
+.work-card h2,
+.work-card h2,
+.cert-card h2,
+.edu-card h2,
+.hobbies-card h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.4rem;
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+  letter-spacing: 0.04rem;
+}
+
+.prof-card svg,
+.skills-card svg,
+.work-card svg,
+.cert-card svg,
+.edu-card svg,
+.hobbies-card svg {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.skills-box.skills--about div {
+  border: none;
+}
+
+.work-card .card,
+.edu-card .card,
+.hobbies-card .card {
+  padding: 2.4rem;
+  margin: 0 0 2.4rem;
+  box-shadow: 0 2.5px 10px 1px rgba(0, 0, 0, 0.079);
+  border-radius: 16px;
+}
+
+.work-header,
+.edu-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 0.4rem;
+  margin: 0 0 2.4rem;
+}
+
+.work-title,
+.edu-title {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+}
+
+.work-comp,
+.edu-inst {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  font-size: 1.6rem;
+  letter-spacing: 0.08rem;
+}
+
+.work-per,
+.edu-per {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  text-align: end;
+  font-size: 1.6rem;
+  color: #666b78;
+  letter-spacing: 0.08rem;
+}
+
+.work-loc {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  font-size: 1.4rem;
+  color: #666b78;
+  letter-spacing: 0.1rem;
+}
+
+.work-act,
+.edu-act {
+  margin: 0 0 1.6rem 3.2rem;
+}
+
+.work-act li,
+.edu-act li {
+  list-style-type: circle;
+  font-size: 1.6rem;
+  color: #666b78;
+  margin: 0 0 1rem;
+  letter-spacing: 0.04rem;
+  line-height: 1.5;
+}
+
+.work-tools {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.work-tools li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  background-color: #dbdde0;
+  border-radius: 6px;
+}
+
+.cert-card .card {
+  width: 400px;
+  display: flex;
+  gap: 3.2rem;
+  box-shadow: 0 2.5px 10px 1px rgba(0, 0, 0, 0.079);
+  border-radius: 16px;
+  transition: all 0.4s;
+}
+
+.cert-card .card a:link,
+.cert-card .card a:visited {
+  display: inline-flex;
+  text-decoration: none;
+  gap: 4.8rem;
+  padding: 2.4rem;
+  color: #00091e;
+}
+
+.cert-card .card:hover {
+  scale: 0.95;
+  box-shadow: 0 2.5px 10px 1px rgba(0, 0, 0, 0.045);
+}
+
+.cert-card .card img {
+  width: 8rem;
+  height: 4.8rem;
+}
+
+.cert-title,
+.hobby-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  /* line-height:; */
+  margin: 0 0 0.6rem;
+}
+
+.cert-inst,
+.hobby-description {
+  font-size: 1.4rem;
+  color: #666b78;
+  margin: 0 0 0.6rem;
+}
+
+.cert-issue-date {
+  font-size: 1.6rem;
+}
+
+.edu-header {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.hobbies-card .card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.hobby-title {
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0 0 1.6rem;
+}
+
+.hobby-title svg {
+  width: 2.8rem;
+  height: 2.8rem;
+}
